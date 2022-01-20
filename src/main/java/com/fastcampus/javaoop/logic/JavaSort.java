@@ -1,8 +1,6 @@
 package com.fastcampus.javaoop.logic;
 
-import java.awt.*;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -17,15 +15,13 @@ import java.util.List;
  * -----------------------------------------------------------
  * 2022/01/16     gogo1260         최초 생성
  */
-public class JavaSort<T extends Comparable<T>> {
+public class JavaSort<T extends Comparable<T>> implements Sort<T> {
     public List<T> sort(List<T> list) {
         List<T> output = new ArrayList<>(list);
         Collections.sort(output);
 
         return output;
     }
-
-
 
 
 }
